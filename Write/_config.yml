@@ -137,7 +137,7 @@ prism_plugin:
   line_number: true
 
 deploy:
-  type: git
-  repo: git@github.com:Hoshino-Yumetsuki/Hexoshelf.git
-  branch: gh-pages-write
-  ignore_hidden: false
+  - type: git
+    repo: git@github.com:Hoshino-Yumetsuki/Hexoshelf.git
+    branch: gh-pages-write
+    ignore_hidden: false
