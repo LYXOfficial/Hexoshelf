@@ -5,6 +5,7 @@ on:
     paths:
       - Blog/**
       - Posts/**
+      - .github/**
   watch:
     types: [started]
 

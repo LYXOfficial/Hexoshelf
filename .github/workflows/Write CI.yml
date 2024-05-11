@@ -5,6 +5,7 @@ on:
     paths:
       - Write/**
       - Posts/**
+      - .github/**
   watch:
     types: [started]
 

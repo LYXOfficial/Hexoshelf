@@ -2,8 +2,10 @@ name: Update CDN
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - Blog/**
+      - Write/**
+      - Posts/**
   watch:
     types: [started]
 
