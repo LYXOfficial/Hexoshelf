@@ -105,7 +105,10 @@ theme: typography
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-
+  - type: git
+    repo: git@github.com:Hoshino-Yumetsuki/Hexoshelf.git
+    branch: gh-pages-write
+    ignore_hidden: false
 # Generate archive page
 archive_generator:
   per_page: 0
@@ -135,9 +138,3 @@ prism_plugin:
   mode: 'preprocess'
   theme: 'default'
   line_number: true
-
-deploy:
-  - type: git
-    repo: git@github.com:Hoshino-Yumetsuki/Hexoshelf.git
-    branch: gh-pages-write
-    ignore_hidden: false
