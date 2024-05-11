@@ -1,0 +1,41 @@
+a(id="speaks" class="recent-post-item swiper-container" style="width:100%;height:auto;padding:10px;display:flex;align-items:center;")
+  i(class="fas fa-comment-alt" style="margin-top:5px")
+  .shuoshuo.swiper-wrapper(style="flex-grow:1;display:flex;align-items:center;")
+    span(style="white-space:nowrap;margin-right:10px;") 一言
+    span#typed-wrapper(style="flex-grow:1;text-align:center;")
+      span#typed(style="display:inline;")
+    script(src="https://registry.npmmirror.com/typed.js/latest/files/dist/typed.umd.js")
+    script.
+      fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+          const options = {
+            strings: [data.hitokoto],
+            typeSpeed: 70,
+            startDelay: 500,
+            showCursor: true,
+            cursorChar: '|',
+            autoInsertCss: true,
+            loop: false,
+          };
+          new Typed('#typed', options);
+        })
+        .catch(error => {
+          console.error('Failed to fetch from the first API:', error);
+          fetch('https://international.v1.hitokoto.cn/')
+            .then(response => response.json())
+            .then(data => {
+              const options = {
+                strings: [data.hitokoto],
+                typeSpeed: 70,
+                startDelay: 500,
+                showCursor: true,
+                cursorChar: '|',
+                autoInsertCss: true,
+                loop: false,
+              };
+              new Typed('#typed', options);
+            })
+            .catch(console.error);
+        });
+  i(class="fa fa-arrow-right" style="margin-top:10px")
