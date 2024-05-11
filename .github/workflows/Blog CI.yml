@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - Blog/**
-      - Posts/**
+      - Posts/Blog/**
       - .github/**
   watch:
     types: [started]
@@ -60,4 +60,4 @@ jobs:
     - uses: JS-DevTools/npm-publish@v3
       with:
         token: ${{ secrets.NPM_TOKEN }}
-        package: ./public/package.json
+        package: ./Blog/public/package.json
