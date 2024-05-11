@@ -33,6 +33,7 @@ jobs:
     - name: Setup Hexo Dependencies
       run: |
         cp -r Posts/Write/ Write/source/_posts
+        cd Write
         npm i hexo-cli -g
         npm i yarn -g
         yarn
@@ -44,6 +45,7 @@ jobs:
 
     - name: Deploy Hexo
       run: |
+        cd Write
         hexo clean
         hexo generate
         hexo deploy

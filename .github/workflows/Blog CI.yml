@@ -45,6 +45,7 @@ jobs:
 
     - name: Deploy Hexo
       run: |
+        cd Blog
         hexo clean
         hexo bangumi -u
         hexo generate
@@ -52,6 +53,7 @@ jobs:
 
     - name: NPM Publish Pre Set
       run: |
+        cd Blog
         node ./prescripts/pkgpublish.mjs
 
     - uses: JS-DevTools/npm-publish@v3
