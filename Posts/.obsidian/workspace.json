@@ -18,7 +18,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Write/圣所往事.md"
+                    "file": "Blog/2024，哪些服务器提供商的性价比高？.md"
                   }
                 }
               }
@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write/圣所往事.md",
+                "file": "Blog/2024，哪些服务器提供商的性价比高？.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
@@ -203,6 +203,7 @@
   },
   "active": "350db8aa0822edc8",
   "lastOpenFiles": [
+    "Write/圣所往事.md",
     "Write/梦溯镜影-C2-樱花树下的契约.md",
     "Blog/Next魔改记录.md",
     "Blog/拯救流量爆炸的vercel——使用Cloudflare Workers做负载均衡.md",
@@ -215,7 +216,6 @@
     "Blog/2023年终总结.md",
     "Write/梦溯镜影-C0-设定集.md",
     "Write/梦溯镜影-C1-被绑定的人生.md",
-    "Write/圣所往事.md",
     "Blog/hello-world.md",
     "Write/hello-world.md",
     "Blog/canvas/Fast-Phasr-Next.canvas",
