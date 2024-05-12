@@ -1,0 +1,48 @@
+<div class="article">
+    <div class='main'>
+        <h1 class="title"><%- page.title %></h1>
+        <div class="stuff">
+            <span><%- page.date.locale("zh-cn").format("MMMM DD, YYYY") %></span>
+            <%- partial('_partial/post/tag', {post: page}) %>
+        </div>
+        <div class="content markdown">
+            <%- page.content %>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="<%- theme.autoplay || page.autoplay || "false" %>">
+                <source type="audio/mpeg" src="<%- page.mp3 %>">
+            </audio>
+            <% if (page.mp3 == '' | page.mp3 == null){%>
+                <ul id="audio-list" style="display:none">
+                    <% for (var i in theme.mp3){ %>
+                        <% if (theme.mp3[i].indexOf('http') == 0){%>
+                            <li title="<%- i %>" data-url="<%- theme.mp3[i] %>"></li>
+                        <%} else {%>
+                            <li title="<%- i %>" data-url="<%- config.root + theme.mp3[i] %>"></li>
+                        <%}%>
+                    <%}%>
+                </ul>
+            <%}%>
+        </div>
+        <% if (theme.copyright.enable){ %>
+            <%- partial("_partial/copyright") %>
+        <% } %>
+        <%- partial('gitalk', {post: page}) %>
+        <div id="tcomment"></div>
+        <script src="https://registry.npmmirror.com/twikoo/latest/files/dist/twikoo.all.min.js"></script>
+        <script>
+          twikoo.init({
+            envId: "https://twikoo.amemei-lists.top", // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+            el: "#tcomment", // 容器元素
+            // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+            // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+            // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/imaegoo/twikoo/blob/main/src/client/utils/i18n/index.js
+          });
+        </script>
+    </div>
+    <% if (theme.TOC == true){ %>
+        <div class="side">
+            <%- toc(page.content, {list_number: true}) %>
+        </div>
+    <%}%>
+</div>
+
