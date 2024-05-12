@@ -4,7 +4,7 @@
 # 修改导航栏项
 menu:
   首页: / ||fa fa-home
-  遗章: https://legacy.anjiurine.top/
+  遗章: https://legacy.anjiurine.top/ || fa fa-hourglass
   文章 ||  fa fa-newspaper:
     随便逛逛: javascript:toRandomPost() || fa fa-paper-plane
     归档: /archives/ || fa fa-archive
