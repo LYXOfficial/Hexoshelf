@@ -6,7 +6,6 @@ tags:
   - AI
 cover: https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/99654366_p0.jpg
 categories: 闲聊杂谈
-abbrlink: 7da7c3f6
 date: 2023-09-29 00:00:00
 ---
 ## 引言

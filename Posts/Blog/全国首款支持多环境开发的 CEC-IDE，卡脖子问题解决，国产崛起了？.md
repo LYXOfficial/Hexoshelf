@@ -4,7 +4,6 @@ tags:
   - 日常
 cover: https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/background7.jpg
 categories: 闲聊杂谈
-abbrlink: e54f7476
 date: 2023-08-25 00:00:00
 swiper_index: 2
 ---

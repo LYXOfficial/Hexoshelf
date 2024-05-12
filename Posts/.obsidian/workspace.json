@@ -18,7 +18,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Blog/2024，哪些服务器提供商的性价比高？.md"
+                    "file": "Write/圣所往事.md"
                   }
                 }
               }
@@ -52,8 +52,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/2024，哪些服务器提供商的性价比高？.md",
-                "mode": "preview",
+                "file": "Write/圣所往事.md",
+                "mode": "source",
                 "backlinks": false,
                 "source": false
               }
@@ -203,9 +203,22 @@
   },
   "active": "350db8aa0822edc8",
   "lastOpenFiles": [
-    "Blog/canvas/Fast-Phasr-Next.canvas",
+    "Write/梦溯镜影-C2-樱花树下的契约.md",
+    "Blog/Next魔改记录.md",
+    "Blog/拯救流量爆炸的vercel——使用Cloudflare Workers做负载均衡.md",
+    "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md",
+    "Blog/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md",
+    "Blog/简爱中的女性意识.md",
+    "Blog/家里云折腾之路——如何把一台好好的浪潮NF5270M3玩坏.md",
+    "Blog/谷歌娘金句收集.md",
+    "Blog/2024，哪些服务器提供商的性价比高？.md",
     "Blog/2023年终总结.md",
     "Write/梦溯镜影-C0-设定集.md",
+    "Write/梦溯镜影-C1-被绑定的人生.md",
+    "Write/圣所往事.md",
+    "Blog/hello-world.md",
+    "Write/hello-world.md",
+    "Blog/canvas/Fast-Phasr-Next.canvas",
     "2023年终总结.md",
     "简爱中的女性意识.md",
     "谷歌娘金句收集.md",
@@ -219,19 +232,7 @@
     "未命名 1.md",
     "这可能是首个Diffsinger数据集全自动标注工具——Fast-Phasr-Next.md",
     "hello-world.md",
-    "Next魔改记录.md",
-    "用量爆炸.md",
-    "梦溯镜影-Chapter 0.md",
-    "梦溯镜影-设定集.md",
-    "梦溯镜影-Chapter 0 1.md",
-    "墙.md",
-    "奇闻.md",
-    "谈谈抑郁症.md",
-    "Drawing 2023-03-26 20.28.09.excalidraw.md",
-    "Excalidraw/Drawing 2023-03-26 20.26.15.excalidraw.md",
     "Excalidraw",
-    "谈谈Hexo.md",
-    "谈谈青春舞曲.md",
     "附件/RO4J{$VR96X{%$KANAVVX[I.jpg",
     "附件",
     "RO4J{$VR96X{%$KANAVVX[I.jpg",
