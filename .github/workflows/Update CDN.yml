@@ -5,6 +5,7 @@ on:
     paths:
       - Blog/**
       - Write/**
+      - Blog-Legacy/**
       - Posts/**
   watch:
     types: [started]
