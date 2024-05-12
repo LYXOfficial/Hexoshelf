@@ -108,6 +108,6 @@ theme: diaspora
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
 - type: git
-  repo: git@github.com:Hoshino-Yumetsuki/Hoshino-Yumetsuki.github.io.git
+  repo: git@github.com:Hoshino-Yumetsuki/Hexoshelf.git
   branch: gh-pages-blog-legacy
   ignore_hidden: false
