@@ -1,11 +1,11 @@
 # 头部菜单，title: link
 menu:
   首页: /
+  主站: https://anjiurine.top/
   分类: /categories/
   标签: /tags/
   归档: /archives/
   关于: /about/
-  主站: https://anjiurine.top/
 
 # 是否显示目录
 TOC: true
