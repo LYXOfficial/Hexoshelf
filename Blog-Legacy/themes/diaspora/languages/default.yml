@@ -1,6 +1,5 @@
 categories: Categories
 search: Search
-search_tip: Search something
 tags: Tags
 tagcloud: Tag Cloud
 tweets: Tweets
@@ -14,10 +13,6 @@ recent_posts: Recent Posts
 newer: Newer
 older: Older
 share: Share
-load_more: Load more
-play_or_pasue: Play / Pause
-view_comments: View comments
-qrcode: QR Code
 powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
