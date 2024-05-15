@@ -34,6 +34,8 @@ var description = '';
     <% if (theme.favicon){ %><link rel="icon" href="<%- url_for(theme.favicon) %>"> <% } %>
     <% if (config.author){ %><meta name="author" content="<%= config.author %>"> <% } %>
 
+    <%- js(['js/jquery.min.js', 'js/parallax.min.js', 'js/typed.js', 'js/diaspora.js'])%>
+
     <link rel="stylesheet" href="https://registry.npmmirror.com/gitalk/latest/files/dist/gitalk.css">
     <script src="https://registry.npmmirror.com/gitalk/latest/files/dist/gitalk.min.js"></script>
     <script src="https://registry.npmmirror.com/twikoo/latest/files/dist/twikoo.all.min.js"></script>
@@ -62,4 +64,12 @@ var description = '';
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    <% if (theme.inject && theme.inject.head) { %>
+        <!--diaspora inject start-->
+            <% for (var i = 0; i < theme.inject.head.length; i++) { %>
+                <%- theme.inject.head[i] %>
+            <% } %>
+        <!--diaspora inject end-->
+    <% } %>
 </head>
