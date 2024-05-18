@@ -18,10 +18,10 @@ jobs:
     - name: Checkout Repository master branch
       uses: actions/checkout@main
 
-    - name: Setup Node.js latest
+    - name: Setup Node.js
       uses: actions/setup-node@main
       with:
-        node-version: "latest"
+        node-version: "20.x"
 
     - name: Setup Deploy Private Key
       env:
@@ -39,7 +39,7 @@ jobs:
 
     - name: Pull Files
       run: |
-        git clone https://huggingface.co/datasets/Q78KG/npm-cdn
+        GIT_CLONE_PROTECTION_ACTIVE=false git clone https://huggingface.co/datasets/Q78KG/npm-cdn
 
     - name: NPM Publish Pre Set
       run: |
