@@ -34,7 +34,6 @@ jobs:
 
     - name: Setup Git Infomation
       run: |
-        git config --system core.longpaths true
         git config --global user.name 'Hoshino-Yumetsuki'
         git config --global user.email 'hoshino-yumetsuki@outlook.com'
 
