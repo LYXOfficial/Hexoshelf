@@ -24,7 +24,7 @@ type: "links"
     descr: 期待您的光临！
   - name: Tianli
     link: https://tianli-blog.club/
-    avatar: https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/flink/Tianli.webp
+    avatar: https://cdn.jsdelivr.net/npm/q78kg-website-npm-cdn/flink/Tianli.webp
     descr: 自知之明是最可贵的知识！
   - name: EthanYep
     link: https://blog.ethanyep.cn/
@@ -130,7 +130,7 @@ type: "links"
 ```yaml
 - name: 梦溯·镜影
   link: https://anjiurine.top/
-  avatar: https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/avatar.png
+  avatar: https://cdn.jsdelivr.net/npm/q78kg-website-npm-cdn/avatar.png
   descr: sleeeeep
   siteshot: https://vercel.yisous.xyz/img/siteshot.png
 ```
@@ -140,7 +140,7 @@ type: "links"
 <!-- tab fluid -->
 
 ```yaml
-- { title: "梦溯·镜影", intro: "sleeeeep", link: "https://anjiurine.top/", image: "https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/avatar.png" }
+- { title: "梦溯·镜影", intro: "sleeeeep", link: "https://anjiurine.top/", image: "https://cdn.jsdelivr.net/npm/q78kg-website-npm-cdn/avatar.png" }
 ```
 
 <!-- endtab -->
@@ -149,7 +149,7 @@ type: "links"
 
 ```yaml
 - title: 梦溯·镜影
-  avatar: https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/avatar.png
+  avatar: https://cdn.jsdelivr.net/npm/q78kg-website-npm-cdn/avatar.png
   url: https://anjiurine.top/
   screenshot: https://yisous.xyz/img/siteshot.png
   keywords: 个人博客
@@ -161,7 +161,7 @@ type: "links"
 <!-- tab html -->
 
 ```html
-<a href="https://anjiurine.top/"><img src="https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/avatar.png" alt="avatar" />梦溯·镜影</a>
+<a href="https://anjiurine.top/"><img src="https://cdn.jsdelivr.net/npm/q78kg-website-npm-cdn/avatar.png" alt="avatar" />梦溯·镜影</a>
 ```
 
 <!-- endtab -->

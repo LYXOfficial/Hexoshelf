@@ -89,8 +89,9 @@ const generate_blog_urls = (packagename, blogversion, path) => {
         // `https://npm.elemecdn.com/${packagename}@${blogversion}`,
         // `https://cdn1.tianli0.top/npm/${packagename}@${blogversion}`,
         // `https://cdn.afdelivr.top/npm/${packagename}@${blogversion}`,
-        //`https://ariasakablog.s3.ladydaily.com`,
-        `https://registry.npmmirror.com/${packagename}/${blogversion}/files`
+        // `https://ariasakablog.s3.ladydaily.com`,
+        // `https://registry.npmmirror.com/${packagename}/${blogversion}/files`,
+        `https://cdn.jsdelivr.net/npm/${packagename}@${blogversion}/`
     ]
     for (var i in npmmirror) {
         npmmirror[i] += path
@@ -100,8 +101,9 @@ const generate_blog_urls = (packagename, blogversion, path) => {
 const mirror = [
     // `https://registry.npmmirror.com/ariasakablog/latest`,
     // `https://registry.npmjs.org/ariasakablog/latest`,
-    // `https://mirrors.cloud.tencent.com/npm/ariasakablog/latest`,
-    `https://registry.npmmirror.com/q78kgblog/latest`
+    // `https://registry.npmmirror.com/q78kgblog/latest`,
+    // `https://cdn.jsdelivr.net/npm/q78kgblog`,
+    `https://mirrors.cloud.tencent.com/npm/q78kgblog/latest`
 ]
 const get_newest_version = async (mirror) => {
 return lfetch(mirror, mirror[0])
