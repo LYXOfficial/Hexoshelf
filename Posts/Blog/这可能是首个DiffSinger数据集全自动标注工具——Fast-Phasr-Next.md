@@ -4,7 +4,7 @@ tags:
   - DiffSinger
   - 自动标注
   - AI
-cover: https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/99654366_p0.jpg
+cover: https://cdn.jsdelivr.net/npm/q78kg-website-npm-cdn/99654366_p0.jpg
 categories: 闲聊杂谈
 date: 2023-09-29 00:00:00
 ---

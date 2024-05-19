@@ -7,7 +7,7 @@ tags:
   - 主题
   - Next
   - Butterfly
-cover: https://registry.npmmirror.com/q78kg-website-npm-cdn/latest/files/2761d84a-a699-423b-a03f-241235497d1d.jpg
+cover: https://cdn.jsdelivr.net/npm/q78kg-website-npm-cdn/2761d84a-a699-423b-a03f-241235497d1d.jpg
 categories: Hexo
 ---
 
