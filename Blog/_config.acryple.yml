@@ -953,13 +953,13 @@ CDN:
     # algolia_search_v4:
     # instantsearch_v4:
     # pjax:
-    # gitalk: https://registry.npmmirror.com/twikoo/latest/files/dist/twikoo.all.min.js
+    # gitalk: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.min.js
     # gitalk_css:
     # blueimp_md5:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    twikoo: https://registry.npmmirror.com/twikoo/latest/files/dist/twikoo.all.min.js
+    twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.min.js
     # waline_js:
     # waline_css:
     # sharejs:
