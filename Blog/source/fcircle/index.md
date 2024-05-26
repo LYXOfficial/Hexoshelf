@@ -9,7 +9,7 @@ date: 2022-01-29 15:23:17
 </div>
 <div id="random-post"></div>
 
-<link rel="stylesheet" type="text/css" href="https://registry.npmmirror.com/js-heo/latest/files/moments/random-friends-post.css">
+<link rel="stylesheet" type="text/css" href="https://unpkg.anjiurine.top/js-heo/moments/random-friends-post.css">
 <!-- 挂载友链朋友圈的容器 -->
 <div class="post-content">
 <div id="cf-container">与主机通讯中……</div>
@@ -23,5 +23,5 @@ date: 2022-01-29 15:23:17
 </script>
 <link rel="stylesheet" href="https://registry.npmmirror.com/fcircle-immmmm/latest/files/fcircle-beta.css">
 <script type="text/javascript" src="https://registry.npmmirror.com/fcircle-immmmm/latest/files/fcircle-beta.js"></script>
-<script type="text/javascript" src="https://registry.npmmirror.com/jquery/latest/files/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.anjiurine.top/jquery/dist/jquery.min.js"></script>
 <script src = "/js/randomFriend.js"></script>

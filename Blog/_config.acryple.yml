@@ -869,8 +869,8 @@ css_prefix: true
 # # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  - <link rel="stylesheet" type="text/css" href="https://registry.npmmirror.com/js-heo/latest/files/mainColor/heoMainColor.css">
-  - <link rel="stylesheet" type="text/css" href="https://registry.npmmirror.com/js-heo/latest/files/404/404.css">
+  - <link rel="stylesheet" type="text/css" href="https://unpkg.anjiurine.top/js-heo/mainColor/heoMainColor.css">
+  - <link rel="stylesheet" type="text/css" href="https://unpkg.anjiurine.top/js-heo/404/404.css">
   - <link rel="stylesheet" type="text/css" href="/js/jike.js">
   - <link rel="stylesheet" type="text/css" href="/js/jikewater.js">
   - <link rel="stylesheet" type="text/css" href="/css/404page.css">
@@ -884,14 +884,14 @@ inject:
   - <style id="yjjs"></style>
   - <style id="themeColor"></style>
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
-  - <link rel="stylesheet" href="https://registry.npmmirror.com/butterfly-card-history/latest/files/css/main.css">
+  - <link rel="stylesheet" href="https://unpkg.anjiurine.top/butterfly-card-history/css/main.css">
   - <link rel="stylesheet" href="/css/commentBarrage.css">
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
-  - <link rel="stylesheet" type="text/css" href="https://registry.npmmirror.com/node-snackbar/latest/files/dist/snackbar.min.css" />
+  - <link rel="stylesheet" type="text/css" href="https://unpkg.anjiurine.top/node-snackbar/dist/snackbar.min.css" />
   - <script src="/swReg.js"></script>
   - <span id="fps"></span>
   - <style id="grays"></style>
-  - <script src="https://registry.npmmirror.com/prefetch-page/latest/files/dist/prefetch.js"></script>
+  - <script src="https://unpkg.anjiurine.top/prefetch-page/dist/prefetch.js"></script>
   - "<script>addEventListener('DOMContentLoaded', function () {prefetch({ threshold: 25, delay: 3000, limit: 10 ,customs: ['search.xml']})});requestIdleCallback(function () {prefetch({ threshold: 25, delay: 3000, limit: 10,customs: ['search.xml']})})</script>"
   bottom:
   - <script type="text/javascript" src="/js/fixbugpjax.js"></script>
@@ -900,12 +900,12 @@ inject:
   - <script type="text/javascript" src="/js/aplayersave.js"></script>
   - <script type="text/javascript" src="/js/noie.js"></script>
   - <script src="https://registry.npmmirror.com/leancloud-storage/4.13.1/files/dist/av-min.js"></script>
-  - <script src="https://registry.npmmirror.com/winbox/latest/files/dist/winbox.bundle.min.js"></script>
-  - <script src="https://registry.npmmirror.com/sweetalert2/8/files/dist/sweetalert2.all.js"></script>
+  - <script src="https://unpkg.anjiurine.top/winbox/dist/winbox.bundle.min.js"></script>
+  - <script src="https://unpkg.anjiurine.top/sweetalert2@8/dist/sweetalert2.all.js"></script>
   - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
   - <script type="text/javascript" src="/js/copy.js"></script>
   - <script type="text/javascript" src="/js/welcome.js"></script>
-  - <script type="text/javascript" src="https://registry.npmmirror.com/jquery/latest/files/dist/jquery.min.js"></script>
+  - <script type="text/javascript" src="https://unpkg.anjiurine.top/jquery/dist/jquery.min.js"></script>
   - <script type="text/javascript" src="/js/resizeTop.js"></script>
   - <script type="text/javascript" src="/js/languages.js"></script>
   - <script type="text/javascript" src="/js/browser.js"></script>
@@ -1030,12 +1030,12 @@ tag_plugins:
   link:
     placeholder: /img/link.png #link_card标签默认的图标图片
   CDN:
-    anima: https://registry.npmmirror.com/hexo-butterfly-tag-plugins-plus/latest/files/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://registry.npmmirror.com/jquery/latest/files/dist/jquery.min.js #issues标签依赖
-    issues: https://registry.npmmirror.com/hexo-butterfly-tag-plugins-plus/latest/files/lib/assets/issues.js #issues标签依赖
+    anima: https://unpkg.anjiurine.top/hexo-butterfly-tag-plugins-plus/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://unpkg.anjiurine.top/jquery/dist/jquery.min.js #issues标签依赖
+    issues: https://unpkg.anjiurine.top/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js #issues标签依赖
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
-    carousel: https://registry.npmmirror.com/hexo-butterfly-tag-plugins-plus/latest/files/lib/assets/carousel-touch.js
-    tag_plugins_css: https://registry.npmmirror.com/hexo-butterfly-tag-plugins-plus/latest/files/lib/tag_plugins.css
+    carousel: https://unpkg.anjiurine.top/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js
+    tag_plugins_css: https://unpkg.anjiurine.top/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.css
 #侧栏悬浮卡片控制按钮
 #https://akilar.top/posts/451ac5f8/
 fixed_card_widget:

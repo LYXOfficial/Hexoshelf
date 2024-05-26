@@ -45,7 +45,7 @@ function _createClass(e, r, t) {
     return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), e
 }
 var config = {
-        src: "https://registry.npmmirror.com/guli-heo/latest/files/others/open-peeps-sheet.png",
+        src: "https://unpkg.anjiurine.top/guli-heo/others/open-peeps-sheet.png",
         rows: 15,
         cols: 7
     },
