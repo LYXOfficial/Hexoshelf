@@ -931,7 +931,7 @@ inject:
   - <script type="text/javascript" src="/js/commentsCount.js"></script>
   - <script type="text/javascript" src="/js/latest.js"></script>
   - <script data-pjax="" defer src="/js/fixed_card_widget.js"></script>
-  - <script type="text/javascript" src="https://registry.npmmirror.com/node-snackbar/0.1.16/files/src/js/snackbar.js"></script>
+  - <script type="text/javascript" src="https://unpkg.anjiurine.top/node-snackbar@0/src/js/snackbar.js"></script>
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
 #
