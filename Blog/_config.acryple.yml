@@ -899,7 +899,7 @@ inject:
   - <div class="aplayer no-destroy" data-id="7803928554" data-server="netease" data-type="playlist" data-listFolded="false" data-preload="metadata" data-theme="var(--lyx-theme)" data-fixed="true" data-autoplay="false" data-volume=0.1 style="z-index:514"> </div>
   - <script type="text/javascript" src="/js/aplayersave.js"></script>
   - <script type="text/javascript" src="/js/noie.js"></script>
-  - <script src="https://registry.npmmirror.com/leancloud-storage/4.13.1/files/dist/av-min.js"></script>
+  - <script src="https://unpkg.anjiurine.top/leancloud-storage@4.13.1/dist/av-min.js"></script>
   - <script src="https://unpkg.anjiurine.top/winbox/dist/winbox.bundle.min.js"></script>
   - <script src="https://unpkg.anjiurine.top/sweetalert2@8/dist/sweetalert2.all.js"></script>
   - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
@@ -995,7 +995,7 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
-    vue: https://registry.npmmirror.com/vue/2.6.11/files/dist/vue.min.js  # vue.js依赖
+    vue: https://unpkg.anjiurine.top/vue@2/dist/vue.min.js  # vue.js依赖
     countup_js: /js/countup.js
     local_search: /js/local-search.js
 # hexo-butterfly-categories-card
@@ -1130,5 +1130,5 @@ gitcalendar:
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
   apiurl: gcapi.anjiurine.top
   # api: https://python-gitee-calendar-api.vercel.app/api
-  # calendar_js: https://registry.npmmirror.com/reverse-stu-allversions/1.0.1/files/butterfly/diy/hexo_githubcalendar.js
+  # calendar_js: https://unpkg.anjiurine.top/reverse-stu-allversions/butterfly/diy/hexo_githubcalendar.js
   # plus_style: ""

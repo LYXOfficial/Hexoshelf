@@ -21,7 +21,7 @@ date: 2022-01-29 15:23:17
     apiurl: 'https://fcircleapi.anjiurine.top/'
   }
 </script>
-<link rel="stylesheet" href="https://registry.npmmirror.com/fcircle-immmmm/latest/files/fcircle-beta.css">
-<script type="text/javascript" src="https://registry.npmmirror.com/fcircle-immmmm/latest/files/fcircle-beta.js"></script>
+<link rel="stylesheet" href="https://unpkg.anjiurine.top/fcircle-immmmm/fcircle-beta.css">
+<script type="text/javascript" src="https://unpkg.anjiurine.top/fcircle-immmmm/fcircle-beta.js"></script>
 <script type="text/javascript" src="https://unpkg.anjiurine.top/jquery/dist/jquery.min.js"></script>
 <script src = "/js/randomFriend.js"></script>
