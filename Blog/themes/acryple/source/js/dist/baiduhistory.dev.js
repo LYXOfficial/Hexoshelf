@@ -37,7 +37,7 @@ if (document.getElementById('history-container')) {
     }
 
     var getMonthDate = "S" + getMonth + getDate;
-    return ["https://unpkg.anjiurine.top/butterfly-card-history/json/" + getMonth + ".json", getMonthDate];
+    return ["https://cdn.jsdelivr.net/npm/butterfly-card-history/json/" + getMonth + ".json", getMonthDate];
   };
 
   var history_data = history_get_data();

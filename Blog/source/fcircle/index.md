@@ -9,7 +9,7 @@ date: 2022-01-29 15:23:17
 </div>
 <div id="random-post"></div>
 
-<link rel="stylesheet" type="text/css" href="https://unpkg.anjiurine.top/js-heo/moments/random-friends-post.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo/moments/random-friends-post.css">
 <!-- 挂载友链朋友圈的容器 -->
 <div class="post-content">
 <div id="cf-container">与主机通讯中……</div>
@@ -21,7 +21,7 @@ date: 2022-01-29 15:23:17
     apiurl: 'https://fcircleapi.anjiurine.top/'
   }
 </script>
-<link rel="stylesheet" href="https://unpkg.anjiurine.top/fcircle-immmmm/fcircle-beta.css">
-<script type="text/javascript" src="https://unpkg.anjiurine.top/fcircle-immmmm/fcircle-beta.js"></script>
-<script type="text/javascript" src="https://unpkg.anjiurine.top/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fcircle-immmmm/fcircle-beta.css">
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fcircle-immmmm/fcircle-beta.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
 <script src = "/js/randomFriend.js"></script>
