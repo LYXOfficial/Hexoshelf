@@ -91,7 +91,7 @@ const generate_blog_urls = (packagename, blogversion, path) => {
         // `https://cdn.afdelivr.top/npm/${packagename}@${blogversion}`,
         // `https://ariasakablog.s3.ladydaily.com`,
         // `https://registry.npmmirror.com/${packagename}/${blogversion}/files`,
-        `https://cdn.jsdelivr.net/npm/${packagename}@${blogversion}`
+        `https://cdn.cbd.int/${packagename}@${blogversion}`
     ]
     for (var i in npmmirror) {
         npmmirror[i] += path
