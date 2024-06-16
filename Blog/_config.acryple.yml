@@ -986,7 +986,7 @@ CDN:
     # fireworks:
     # click_heart:
     # ClickShowText:
-    # fontawesomeV6:
+    fontawesomeV6: https://cdn.cbd.int/@fortawesome/fontawesome-free/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
     # aplayer_css:
