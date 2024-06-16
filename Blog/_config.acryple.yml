@@ -870,7 +870,7 @@ css_prefix: true
 inject:
   head:
   - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo/mainColor/heoMainColor.css">
-  - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo/404/404.css">
+  - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/404/404.css">
   - <link rel="stylesheet" type="text/css" href="/js/jike.js">
   - <link rel="stylesheet" type="text/css" href="/js/jikewater.js">
   - <link rel="stylesheet" type="text/css" href="/css/404page.css">
@@ -884,7 +884,7 @@ inject:
   - <style id="yjjs"></style>
   - <style id="themeColor"></style>
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
-  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-card-history/css/main.css">
+  - <link rel="stylesheet" href="https://cdn.cbd.int/butterfly-card-history/css/main.css">
   - <link rel="stylesheet" href="/css/commentBarrage.css">
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
   - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" />
