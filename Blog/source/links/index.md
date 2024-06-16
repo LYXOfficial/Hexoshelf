@@ -11,7 +11,7 @@ type: "links"
 </div>
 <div id="random-post"></div>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo/moments/random-friends-post.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/moments/random-friends-post.css">
 
 {% flink %}
 
@@ -184,7 +184,7 @@ type: "links"
 
 点下面的按钮！
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.cbd.int/jquery/dist/jquery.min.js"></script>
 <script src = "/js/randomFriend.js"></script>
 
 <a href="javascript:void(0)" onclick="addflink()">快速添加友链</a>

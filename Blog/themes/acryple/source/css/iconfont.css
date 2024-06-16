@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont";
-  src: url('https://cdn.jsdelivr.net/npm/q78kgblog/css/iconfont.woff2') format('woff2'),
-       url('https://cdn.jsdelivr.net/npm/q78kgblog/css/iconfont.woff') format('woff'),
-       url('https://cdn.jsdelivr.net/npm/q78kgblog/css/iconfont.ttf') format('truetype');
+  src: url('https://cdn.cbd.int/q78kgblog/css/iconfont.woff2') format('woff2'),
+       url('https://cdn.cbd.int/q78kgblog/css/iconfont.woff') format('woff'),
+       url('https://cdn.cbd.int/q78kgblog/css/iconfont.ttf') format('truetype');
 }
 
 .iconfont {

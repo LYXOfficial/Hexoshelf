@@ -27502,7 +27502,7 @@ async function loadJS(items, context) {
 }
 
 const template = "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"UTF-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n<title>Markmap</title>\n<style>\n* {\n  margin: 0;\n  padding: 0;\n}\n#mindmap {\n  display: block;\n  width: 100vw;\n  height: 100vh;\n}\n</style>\n<!--CSS-->\n</head>\n<body>\n<svg id=\"mindmap\"></svg>\n<!--JS-->\n</body>\n</html>\n";
-const BASE_JS = [`https://cdn.jsdelivr.net/npm/d3@${"6.6.0"}`, `https://cdn.jsdelivr.net/npm/markmap-view@${"0.2.6"}`].map(src => ({
+const BASE_JS = [`https://cdn.cbd.int/d3@${"6.6.0"}`, `https://cdn.cbd.int/markmap-view@${"0.2.6"}`].map(src => ({
   type: 'script',
   data: {
     src
@@ -35849,7 +35849,7 @@ const autoload$1 = () => {
   loading$1 = loading$1 || loadJS([{
     type: 'script',
     data: {
-      src: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js'
+      src: 'https://cdn.cbd.int/katex@0.12.0/dist/katex.min.js'
     }
   }]);
   return loading$1;
@@ -35884,7 +35884,7 @@ function transform$1(transformHooks) {
     styles: [{
       type: 'stylesheet',
       data: {
-        href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css'
+        href: 'https://cdn.cbd.int/katex@0.12.0/dist/katex.min.css'
       }
     }],
     scripts: [{
@@ -35911,7 +35911,7 @@ function transform$1(transformHooks) {
     }, {
       type: 'script',
       data: {
-        src: 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js',
+        src: 'https://cdn.cbd.int/webfontloader@1.6.28/webfontloader.js',
         defer: true
       }
     }]
@@ -35930,12 +35930,12 @@ const autoload = () => {
   loading = loading || loadJS([{
     type: 'script',
     data: {
-      src: `https://cdn.jsdelivr.net/npm/prismjs@${"1.23.0"}/components/prism-core.min.js`
+      src: `https://cdn.cbd.int/prismjs@${"1.23.0"}/components/prism-core.min.js`
     }
   }, {
     type: 'script',
     data: {
-      src: `https://cdn.jsdelivr.net/npm/prismjs@${"1.23.0"}/plugins/autoloader/prism-autoloader.min.js`
+      src: `https://cdn.cbd.int/prismjs@${"1.23.0"}/plugins/autoloader/prism-autoloader.min.js`
     }
   }]);
   return loading;
@@ -35975,7 +35975,7 @@ function transform(transformHooks) {
     styles: [{
       type: 'stylesheet',
       data: {
-        href: `https://cdn.jsdelivr.net/npm/prismjs@${"1.23.0"}/themes/prism.css`
+        href: `https://cdn.cbd.int/prismjs@${"1.23.0"}/themes/prism.css`
       }
     }]
   };

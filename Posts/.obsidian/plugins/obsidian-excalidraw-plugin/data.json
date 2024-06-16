@@ -726,5 +726,5 @@
   },
   "slidingPanesSupport": false,
   "areaZoomLimit": 1,
-  "mathjaxSourceURL": "https://cdn.jsdelivr.net/npm/mathjax@3.2.1/es5/tex-svg.js"
+  "mathjaxSourceURL": "https://cdn.cbd.int/mathjax@3.2.1/es5/tex-svg.js"
 }

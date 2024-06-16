@@ -27128,7 +27128,7 @@ function transform(transformHooks) {
     styles: [{
       type: 'stylesheet',
       data: {
-        href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css'
+        href: 'https://cdn.cbd.int/katex@0.12.0/dist/katex.min.css'
       }
     }],
     scripts: [{
@@ -27157,7 +27157,7 @@ function transform(transformHooks) {
     }, {
       type: 'script',
       data: {
-        src: 'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js',
+        src: 'https://cdn.cbd.int/webfontloader@1.6.28/webfontloader.js',
         defer: true
       }
     }]
@@ -27195,7 +27195,7 @@ function transform$1(transformHooks) {
     styles: [{
       type: 'stylesheet',
       data: {
-        href: 'https://cdn.jsdelivr.net/npm/prismjs@1/themes/prism.css'
+        href: 'https://cdn.cbd.int/prismjs@1/themes/prism.css'
       }
     }]
   };

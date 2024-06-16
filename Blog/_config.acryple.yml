@@ -869,8 +869,8 @@ css_prefix: true
 # # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo/mainColor/heoMainColor.css">
-  - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/js-heo/404/404.css">
+  - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/mainColor/heoMainColor.css">
+  - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/404/404.css">
   - <link rel="stylesheet" type="text/css" href="/js/jike.js">
   - <link rel="stylesheet" type="text/css" href="/js/jikewater.js">
   - <link rel="stylesheet" type="text/css" href="/css/404page.css">
@@ -884,14 +884,14 @@ inject:
   - <style id="yjjs"></style>
   - <style id="themeColor"></style>
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
-  - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-card-history/css/main.css">
+  - <link rel="stylesheet" href="https://cdn.cbd.int/butterfly-card-history/css/main.css">
   - <link rel="stylesheet" href="/css/commentBarrage.css">
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
-  - <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" />
+  - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/node-snackbar/dist/snackbar.min.css" />
   - <script src="/swReg.js"></script>
   - <span id="fps"></span>
   - <style id="grays"></style>
-  - <script src="https://cdn.jsdelivr.net/npm/prefetch-page/dist/prefetch.js"></script>
+  - <script src="https://cdn.cbd.int/prefetch-page/dist/prefetch.js"></script>
   - "<script>addEventListener('DOMContentLoaded', function () {prefetch({ threshold: 25, delay: 3000, limit: 10 ,customs: ['search.xml']})});requestIdleCallback(function () {prefetch({ threshold: 25, delay: 3000, limit: 10,customs: ['search.xml']})})</script>"
   bottom:
   - <script type="text/javascript" src="/js/fixbugpjax.js"></script>
@@ -899,13 +899,13 @@ inject:
   - <div class="aplayer no-destroy" data-id="7803928554" data-server="netease" data-type="playlist" data-listFolded="false" data-preload="metadata" data-theme="var(--lyx-theme)" data-fixed="true" data-autoplay="false" data-volume=0.1 style="z-index:514"> </div>
   - <script type="text/javascript" src="/js/aplayersave.js"></script>
   - <script type="text/javascript" src="/js/noie.js"></script>
-  - <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.13.1/dist/av-min.js"></script>
-  - <script src="https://cdn.jsdelivr.net/npm/winbox/dist/winbox.bundle.min.js"></script>
-  - <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8/dist/sweetalert2.all.js"></script>
+  - <script src="https://cdn.cbd.int/leancloud-storage@4.13.1/dist/av-min.js"></script>
+  - <script src="https://cdn.cbd.int/winbox/dist/winbox.bundle.min.js"></script>
+  - <script src="https://cdn.cbd.int/sweetalert2@8/dist/sweetalert2.all.js"></script>
   - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
   - <script type="text/javascript" src="/js/copy.js"></script>
   - <script type="text/javascript" src="/js/welcome.js"></script>
-  - <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+  - <script type="text/javascript" src="https://cdn.cbd.int/jquery/dist/jquery.min.js"></script>
   - <script type="text/javascript" src="/js/resizeTop.js"></script>
   - <script type="text/javascript" src="/js/languages.js"></script>
   - <script type="text/javascript" src="/js/browser.js"></script>
@@ -931,7 +931,7 @@ inject:
   - <script type="text/javascript" src="/js/commentsCount.js"></script>
   - <script type="text/javascript" src="/js/latest.js"></script>
   - <script data-pjax="" defer src="/js/fixed_card_widget.js"></script>
-  - <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/node-snackbar@0/src/js/snackbar.js"></script>
+  - <script type="text/javascript" src="https://cdn.cbd.int/node-snackbar@0/src/js/snackbar.js"></script>
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
 #
@@ -954,13 +954,13 @@ CDN:
     # algolia_search_v4:
     # instantsearch_v4:
     # pjax:
-    # gitalk: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.min.js
+    # gitalk: https://cdn.cbd.int/twikoo/dist/twikoo.min.js
     # gitalk_css:
     # blueimp_md5:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.min.js
+    twikoo: https://cdn.cbd.int/twikoo/dist/twikoo.min.js
     # waline_js:
     # waline_css:
     # sharejs:
@@ -995,7 +995,7 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
-    vue: https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js  # vue.js依赖
+    vue: https://cdn.cbd.int/vue@2/dist/vue.min.js  # vue.js依赖
     countup_js: /js/countup.js
     local_search: /js/local-search.js
 # hexo-butterfly-categories-card
@@ -1030,12 +1030,12 @@ tag_plugins:
   link:
     placeholder: /img/link.png #link_card标签默认的图标图片
   CDN:
-    anima: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js #issues标签依赖
-    issues: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js #issues标签依赖
+    anima: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://cdn.cbd.int/jquery/dist/jquery.min.js #issues标签依赖
+    issues: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js #issues标签依赖
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
-    carousel: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js
-    tag_plugins_css: https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.css
+    carousel: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js
+    tag_plugins_css: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.css
 #侧栏悬浮卡片控制按钮
 #https://akilar.top/posts/451ac5f8/
 fixed_card_widget:
@@ -1130,5 +1130,5 @@ gitcalendar:
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
   apiurl: gcapi.anjiurine.top
   # api: https://python-gitee-calendar-api.vercel.app/api
-  # calendar_js: https://cdn.jsdelivr.net/npm/reverse-stu-allversions/butterfly/diy/hexo_githubcalendar.js
+  # calendar_js: https://cdn.cbd.int/reverse-stu-allversions/butterfly/diy/hexo_githubcalendar.js
   # plus_style: ""
