@@ -96,11 +96,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://img-r2.anjiurine.top/q78kg/avatar-60x60.webp
+favicon: https://img-r2.anjiurine.top/q78kg/avatar.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://img-r2.anjiurine.top/q78kg/avatar-60x60.webp
+  img: https://img-r2.anjiurine.top/q78kg/avatar.webp
   effect: false
 
 # Disable all banner image
@@ -986,7 +986,7 @@ CDN:
     # fireworks:
     # click_heart:
     # ClickShowText:
-    # fontawesomeV6:
+    fontawesomeV6: https://cdn.cbd.int/@fortawesome/fontawesome-free/css/all.min.css
     # flickr_justified_gallery_js:
     # flickr_justified_gallery_css:
     # aplayer_css:
