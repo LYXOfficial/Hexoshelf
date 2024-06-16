@@ -960,7 +960,7 @@ CDN:
     # valine:
     # disqusjs:
     # disqusjs_css:
-    twikoo: https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.min.js
+    twikoo: https://cdn.cbd.int/twikoo/dist/twikoo.min.js
     # waline_js:
     # waline_css:
     # sharejs:
@@ -995,7 +995,7 @@ CDN:
     # prismjs_js:
     # prismjs_lineNumber_js:
     # prismjs_autoloader:
-    vue: https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js  # vue.js依赖
+    vue: https://cdn.cbd.int/vue@2/dist/vue.min.js  # vue.js依赖
     countup_js: /js/countup.js
     local_search: /js/local-search.js
 # hexo-butterfly-categories-card
