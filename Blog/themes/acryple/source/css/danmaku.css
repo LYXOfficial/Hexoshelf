@@ -1,4 +1,4 @@
-#danmaku-container{
+#danmaku-container {
 	width: 100%;
 	height: 400px;
 	/*background: url("https://markdown-img-1303371957.cos.ap-nanjing.myqcloud.com/dora/201704_C.png");*/
@@ -9,7 +9,7 @@
 	position: relative;
 }
 
-#danmaku-container .danmaku{
+#danmaku-container .danmaku {
 	position: absolute;
 	padding: 8px;
 	background: rgba(0, 0, 0, 0.9);
@@ -21,69 +21,86 @@
 	border: 1px solid rgba(255, 255, 255, 0.2);
 	min-width: 100px;
 }
-#danmaku-container .danmaku.out{
+
+#danmaku-container .danmaku.out {
 	opacity: 0;
 }
-@keyframes danmakuIn{
-	0%{
+
+@keyframes danmakuIn {
+	0% {
 		transform: scale(0.1);
-	},
-	100%{
+	}
+
+	,
+	100% {
 		transform: scale(1.0);
 	}
 }
 
 
 
-#danmaku-container .danmaku .danmakuHead{
+#danmaku-container .danmaku .danmakuHead {
 	height: 30px;
 	padding: 4px 0;
 	line-height: 18px;
 	font-size: 12px;
-	border-bottom: 1px solid rgba(255,255,255,0.3);
-    display: flex;
-    justify-content: space-between;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	display: flex;
+	justify-content: space-between;
 }
-#danmaku-container .danmaku .danmakuAvatar{
+
+#danmaku-container .danmaku .danmakuAvatar {
 	width: 16px;
 	height: 16px;
 	margin: 0;
 	border-radius: 50%;
 }
-#danmaku-container .danmaku .danmakuContent{
+
+#danmaku-container .danmaku .danmakuContent {
 	font-size: 14px;
 }
-.danmaku{
-	flex-direction:row!important;
+
+.danmaku {
+	flex-direction: row !important;
 }
-.danmakuHead{
-	border:none!important;
+
+.danmakuHead {
+	border: none !important;
 }
-.danmaku{
-	height:30px;
-	padding:4px!important;
-	padding-top:2px!important;
+
+.danmaku {
+	height: 30px;
+	padding: 4px !important;
+	padding-top: 2px !important;
 }
-.danmakuContent{
+
+.danmakuContent {
 	overflow: hidden;
 }
-.danmakuNick{
-word-break:keep-all;white-space:nowrap;}
-.danmakuContent{
+
+.danmakuNick {
+	word-break: keep-all;
+	white-space: nowrap;
+}
+
+.danmakuContent {
 	transform: translateY(-2px);
 }
-.danmaku{
-	transition: all 15s!important;
+
+.danmaku {
+	transition: all 15s !important;
 }
-.danmaku *{
+
+.danmaku * {
 	flex-shrink: 0;
 }
+
 #danmaku-container {
-    position: fixed;
-    z-index: 114514;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+	position: fixed;
+	z-index: 114514;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
 	pointer-events: none;
 }
