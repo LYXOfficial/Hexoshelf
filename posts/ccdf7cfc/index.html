@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>拯救流量爆炸的vercel——使用Cloudflare Workers做负载均衡 - 梦溯·镜影</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Q78KG,"> 
+    <meta name="description" content="这是梦溯·镜影，会时不时发一些自己都没眼看的文章,事情起因这两天，把我的某个网站的评论系统换成了twikoo，过了几天一看，因为网站访问量比较高（日2k+），vercel的云函数使用量直接爆炸
+我这一想，嘶~这到时候vercel给我封了咋整。随即，,"> 
+    <link rel="alternative" href="atom.xml" title="梦溯·镜影" type="application/atom+xml"> 
+    <link rel="icon" href="https://img-r2.anjiurine.top/q78kg/avatar.webp"> 
+    <meta name="author" content="Q78KG"> 
+
+    
+<script src="/js/jquery.min.js"></script>
+<script src="/js/parallax.min.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.cbd.int/gitalk/dist/gitalk.css">
+    <script src="https://cdn.cbd.int/gitalk/dist/gitalk.min.js"></script>
+    <script src="https://cdn.cbd.int/twikoo/dist/twikoo.min.js"></script>
+
+    <script src="https://cdn.cbd.int/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free/css/all.min.css">
+
+    
+<script src="/live2d-widget/autoload.js"></script>
+
+
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="拯救流量爆炸的vercel——使用Cloudflare Workers做负载均衡 - 梦溯·镜影"/>
+    <meta name="twitter:description" content="这是梦溯·镜影，会时不时发一些自己都没眼看的文章,事情起因这两天，把我的某个网站的评论系统换成了twikoo，过了几天一看，因为网站访问量比较高（日2k+），vercel的云函数使用量直接爆炸
+我这一想，嘶~这到时候vercel给我封了咋整。随即，,"/>
+    
+    
+    
+    
+
+    <meta property="og:site_name" content="梦溯·镜影"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="拯救流量爆炸的vercel——使用Cloudflare Workers做负载均衡 - 梦溯·镜影"/>
+    <meta property="og:description" content="这是梦溯·镜影，会时不时发一些自己都没眼看的文章,事情起因这两天，把我的某个网站的评论系统换成了twikoo，过了几天一看，因为网站访问量比较高（日2k+），vercel的云函数使用量直接爆炸
+我这一想，嘶~这到时候vercel给我封了咋整。随即，,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+    
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">梦溯·镜影</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://legacy.anjiurine.top"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">拯救流量爆炸的vercel——使用Cloudflare Workers做负载均衡</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">拯救流量爆炸的vercel——使用Cloudflare Workers做负载均衡</h1>
+        <div class="stuff">
+            <span>九月 17, 2023</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Cloudflare/" rel="tag">Cloudflare</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Hexo/" rel="tag">Hexo</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Vercel/" rel="tag">Vercel</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Workers/" rel="tag">Workers</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%B0%B7%E6%AD%8C%E7%BF%BB%E8%AF%91/" rel="tag">谷歌翻译</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1/" rel="tag">负载均衡</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <!-- Parsed by Markdown Enhanced (by memset0) -->
+
+<h2 id="事情起因"><a class="headerlink" href="#事情起因" title="事情起因"></a>事情起因</h2><p>这两天，把我的某个网站的评论系统换成了twikoo，过了几天一看，因为网站访问量比较高（日2k+），vercel的云函数使用量直接爆炸</p>
+<p><img src="https://img-r2.anjiurine.top/q78kg/appendix/6f3c565b/1.webp"><br>我这一想，嘶~这到时候vercel给我封了咋整。随即，我就开始查找相关负载均衡的资料。因为我之前完全没有做过这方面的功课，所以光是查资料就用了半天。瞎找半天，发现结果cloudflare支持基于dns的负载均衡方案，但是我定睛一看，只有A记录和AAAA记录支持，各种云函数平台基本上都是cname的，这可难办啊。</p>
+<p>再看Cloudflare的动态负载均衡方案，5刀，死贵，当即放弃。</p>
+<h2 id="一线曙光"><a class="headerlink" href="#一线曙光" title="一线曙光"></a>一线曙光</h2><p>当我在吃饭的时候，突然想到Cloudflare有Workers这个功能，那我是不是可以去薅cf的羊毛呢？</p>
+<p>Cloudflare Workers每天有100k次的请求次数，对于我这种每天全站最大请求次数只有31k的小站足够了，何况我目前要分流的仅仅是一个twikoo！</p>
+<h2 id="解决方案"><a class="headerlink" href="#解决方案" title="解决方案"></a>解决方案</h2><p>于是乎，我当即就让一个朋友<del>（无中生友）</del>帮我写了Workers代码。这个代码能够将发送到Workers的流量根据权重分流到不同的url。（是的你没听错，它甚至支持配置权重！）</p>
+<p>下面是完整代码</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 要分流的url，支持添加多条url</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">TARGETS</span> = [<span class="string">&quot;https://example1.com&quot;</span>, <span class="string">&quot;https://example2.com&quot;</span>]</span><br><span class="line"><span class="comment">// url权重，数字一样就是对半分</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable constant_">WEIGHTS</span> = [<span class="number">5</span>, <span class="number">5</span>]</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">handleRequest</span>(<span class="params">request</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> random = <span class="title class_">Math</span>.<span class="title function_">random</span>()</span><br><span class="line">  <span class="keyword">let</span> sum = <span class="variable constant_">WEIGHTS</span>.<span class="title function_">reduce</span>(<span class="function">(<span class="params">a, b</span>) =&gt;</span> a + b, <span class="number">0</span>)</span><br><span class="line">  random = random * sum</span><br><span class="line">  <span class="keyword">let</span> target = <span class="literal">null</span></span><br><span class="line">  <span class="keyword">let</span> acc = <span class="number">0</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="variable constant_">TARGETS</span>.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    acc += <span class="variable constant_">WEIGHTS</span>[i]</span><br><span class="line">    <span class="keyword">if</span> (random &lt; acc) &#123;</span><br><span class="line">      target = <span class="variable constant_">TARGETS</span>[i]</span><br><span class="line">      <span class="keyword">break</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">let</span> url = <span class="keyword">new</span> <span class="title function_">URL</span>(request.<span class="property">url</span>)</span><br><span class="line">  <span class="keyword">let</span> targetUrl = <span class="keyword">new</span> <span class="title function_">URL</span>(target)</span><br><span class="line">  url.<span class="property">protocol</span> = targetUrl.<span class="property">protocol</span></span><br><span class="line">  url.<span class="property">hostname</span> = targetUrl.<span class="property">hostname</span></span><br><span class="line">  url.<span class="property">pathname</span> = targetUrl.<span class="property">pathname</span></span><br><span class="line">  url.<span class="property">search</span> = targetUrl.<span class="property">search</span></span><br><span class="line">  url.<span class="property">hash</span> = targetUrl.<span class="property">hash</span></span><br><span class="line">  <span class="keyword">let</span> newRequest = <span class="keyword">new</span> <span class="title class_">Request</span>(url, request)</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">await</span> <span class="title function_">fetch</span>(newRequest)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="title function_">addEventListener</span>(<span class="string">&quot;fetch&quot;</span>, <span class="function"><span class="params">event</span> =&gt;</span> &#123;</span><br><span class="line">  event.<span class="title function_">respondWith</span>(<span class="title function_">handleRequest</span>(event.<span class="property">request</span>))</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                </ul>
+            
+        </div>
+        
+        <div id="comments-container">
+    
+        
+        
+            <div id="tcomment" class="comment link"
+                data-ae="true"
+                data-e="https://twikoo.anjiurine.top"
+                data-r=""
+                data-v="true"
+            >查看评论</div>
+        
+    
+</div>
+    </div>
+    
+        <div class="side">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8B%E6%83%85%E8%B5%B7%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">事情起因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E7%BA%BF%E6%9B%99%E5%85%89"><span class="toc-number">2.</span> <span class="toc-text">一线曙光</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">3.</span> <span class="toc-text">解决方案</span></a></li></ol>
+        </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</html>
